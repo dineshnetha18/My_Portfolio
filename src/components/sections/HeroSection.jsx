@@ -203,7 +203,7 @@ padding: 0 0px;
 
 const HeroSection = () => {
   return (
-    <div id='about'>
+    <div id='About'>
       <HeroContainer>
         <HeroBg>
           <StarCanvas /> 

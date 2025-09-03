@@ -134,12 +134,12 @@ const Contact = () => {
             <Desc style={{
                 marginBottom: '40px',
             }}>
-              Feel free to reach out to me.         
+              Thank you for visiting my portfolio! If you’d like to collaborate, discuss opportunities, feel free to reach out.         
             </Desc>
             <ContactForm onSubmit={handleSubmit}>
-                <ContactTitle>Email me</ContactTitle>
-                <ContactInput placeholder='Your Email' name='from_email' />
+                <ContactTitle>Get in Touch 🚀</ContactTitle>
                 <ContactInput placeholder='Your Name' name='from_name' />
+                <ContactInput placeholder='Your Email' name='from_email' />
                 <ContactInput placeholder='Subject' name='subject' />
                 <ContactInputMessage placeholder='Message' name='message' rows={4} />
                 <ContactButton type='submit' value='Send' />

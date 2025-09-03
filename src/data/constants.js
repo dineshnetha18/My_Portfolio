@@ -277,9 +277,9 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/innovatefirst.jpeg?alt=media", 
+    img: "./New_Images/VisnLabs.jpeg", 
     role: "Frontend Developer",
-    company: "InnovateFirst Solutions LLP",
+    company: "InnovateFirst Solutions LLP, Hyderabad",
     date: "Nov 2024 - Present",
     desc: "Developing fintech applications for forex brokerage platforms with trading tools (MAM, PAMM, Social Trading, Copy Trading). Designed real-time dashboards using React.js, Next.js, Redux, and Tailwind CSS. Integrated GraphQL APIs and WebSockets for efficient data fetching and live updates. Built reusable components, implemented theme customization, optimized performance, and collaborated in Agile teams for scalable delivery.",
     skills: [
@@ -298,7 +298,7 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/aarmec.jpeg?alt=media",
+    img: "./New_Images/Aarmac.png",
     role: "Frontend Developer",
     company: "Aarmec Technologies, Bangalore",
     date: "Apr 2022 - Nov 2024",
@@ -323,29 +323,29 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/tkr.jpeg?alt=media",
+    img: "./New_Images/TKR.png",
     school: "TKR College of Engineering and Technology, Hyderabad",
     date: "2016 - 2020",
     grade: "6.89 CGPA",
-    desc: "Completed Bachelor of Technology in Engineering at TKR College of Engineering and Technology. Gained strong technical foundations in software development and problem-solving, with practical exposure through projects and assignments.",
+    desc: "Completed Bachelor of Technology in Engineering from TKR College of Engineering and Technology, gaining strong technical foundations, problem-solving abilities, and practical exposure through academic projects and coursework.",
     degree: "Bachelor of Technology - BTech",
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/intermediate.png?alt=media",
-    school: "Board of Intermediate Education",
+    img: "./New_Images/Sri.png",
+    school: "Sri Chaitanya jr. college",
     date: "2014 - 2016",
     grade: "83.5%",
-    desc: "Completed Intermediate education under the Board of Intermediate with a focus on Science and Mathematics.",
+    desc: "Completed Intermediate education under the Board of Intermediate, with a focused curriculum in Science and Mathematics that strengthened analytical skills, logical reasoning, and academic discipline.",
     degree: "Intermediate - Science Stream",
   },
   {
     id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/ssc.png?alt=media",
-    school: "Board of Secondary Education",
+    img: "./New_Images/School.png",
+    school: "Kennedy high school",
     date: "2013 - 2014",
     grade: "8.3",
-    desc: "Completed SSC (Secondary School Certificate) under the Board of Secondary Education, building strong academic fundamentals.",
+    desc: "Completed SSC (Secondary School Certificate) under the Board of Secondary Education, establishing strong academic fundamentals and developing a foundation for higher education and technical learning.",
     degree: "SSC - Secondary School",
   },
 ];
@@ -356,9 +356,18 @@ export const projects = [
     id: 0,
     title: "Forex Brokerage Trading Platform",
     date: "Nov 2024 – Present",
-    description:
-      "Developed responsive, real-time trading dashboards using React.js, Next.js, and Tailwind CSS for forex brokerage platforms. Implemented theme customization, GraphQL APIs, WebSockets for live updates, and integrated TradingView for chart-based trading. Built advanced analytics, payment gateway solutions, ticket system, and AI-powered KYC verification.",
-    image: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/forex-trading.png?alt=media",
+    description: (
+  <>
+   The <b>Forex Brokerage Trading Platform</b> is a customizable solution built for brokers to manage traders under their brand with dynamic themes and advanced trading features.<br /><br />
+
+I developed responsive, real-time dashboards using <b>React.js, Next.js, and Tailwind CSS</b>, ensuring seamless user experiences across devices. The platform integrates <b>GraphQL APIs</b> for efficient data fetching and <b>WebSockets</b> for live trading updates.<br /><br />
+
+I also worked with <b>TradingView integration</b>, enabling chart-based trading tools and market data visualization. Additional contributions include implementing theme customization with dark/light modes, developing advanced analytics dashboards, creating a customized <b>RBAC system</b> (Role-Based Access Control), and building a ticket system for client support. To enhance security and onboarding, I implemented an <b>AI-powered KYC verification system</b>.<br /><br />
+
+This project emphasized <b>performance optimization</b> through code-splitting, lazy loading, and efficient data handling, along with end-to-end development (<b>frontend</b>, <b>Node.js backend</b>, and <b>database integration with MongoDB</b>).
+  </>
+),
+    image: "./New_Images/Forex.jpg",
     tags: [
       "React.js",
       "Next.js",
@@ -378,8 +387,18 @@ export const projects = [
     title: "E-Education Platform",
     date: "Aug 2023 – Nov 2024",
     description:
-      "Built a comprehensive online learning platform with features for course enrollment, live sessions, pre-recorded video playback, and certification. Designed responsive UI with React.js and Tailwind CSS, integrated APIs for dynamic content, and optimized performance with code splitting and lazy loading.",
-    image: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/e-education.png?alt=media",
+      (
+        <>
+        The <b>E-Education Platform</b> is a comprehensive online learning portal offering features such as <b>course enrollment</b>, <b>live sessions</b>, <b>pre-recorded video playback</b>, and <b>certification management</b>.<br /><br />
+
+I developed the front-end using <b>React.js</b>, <b>Tailwind CSS</b>, and <b>JavaScript</b>, focusing on a highly responsive and intuitive design.<br /><br />
+
+The platform integrated <b>APIs</b> for fetching dynamic content such as course lists, faculty details, and student progress. I collaborated closely with <b>UI/UX designers</b> to build visually appealing and user-friendly interfaces, ensuring accessibility across desktop and mobile devices.<br /><br />
+
+Performance was optimized using <b>code splitting</b> and <b>lazy loading</b>, resulting in faster load times and a smooth experience. I also participated in <b>Agile sprint meetings</b> and stand-ups, contributing to iterative feature delivery and post-launch enhancements.
+        </>
+      ),
+    image: "./New_Images/eeducation.jpg",
     tags: [
       "React.js",
       "Tailwind CSS",
@@ -397,8 +416,18 @@ export const projects = [
     title: "HRMS Portal",
     date: "Apr 2022 – Jul 2023",
     description:
-      "Developed a human resource management system for handling employee records, payroll, and performance management. Created reusable UI components with React.js and Tailwind CSS, integrated Redux for state management, and collaborated on RESTful APIs with backend teams. Conducted testing and debugging to ensure high performance and reliability.",
-    image: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/hrms-portal.png?alt=media",
+      (
+        <>
+        The <b>HRMS Portal</b> is a human resource management system designed to streamline <b>employee records</b>, <b>payroll</b>, and <b>performance management</b>.<br /><br />
+
+I developed user-friendly interfaces with <b>React.js</b> and <b>Tailwind CSS</b>, ensuring a smooth and efficient user experience.<br /><br />
+
+Key features I implemented included <b>form validation</b>, <b>dynamic data fetching</b>, and <b>Redux state management</b> for handling large-scale data efficiently. I collaborated with backend teams to design and integrate <b>RESTful APIs</b> for employee management functions.<br /><br />
+
+Additionally, I created <b>reusable UI components</b> to standardize design across modules and conducted thorough <b>testing and debugging</b> to ensure high performance and reliability. I also provided <b>24/7 production support</b>, addressing issues in real-time to maintain system stability.
+        </>
+      ),
+    image: "./New_Images/hrms.jpg",
     tags: [
       "React.js",
       "Redux",

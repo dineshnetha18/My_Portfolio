@@ -105,7 +105,8 @@ const Projects = () => {
         <Desc style={{
             marginBottom: '40px',
         }}>
-            I have worked on a wide range of projects. Here are some of my projects.
+            I have built a variety of projects that highlight my skills in web development and problem-solving.  
+  Each one reflects my passion for creating practical, user-friendly, and impactful solutions.    
         </Desc>
         <ToggleButtonGroup>
             <ToggleButton active = {toggle === 'all'} 

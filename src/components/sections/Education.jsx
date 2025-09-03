@@ -62,7 +62,7 @@ const Education = () => {
             <Desc style={{
                 marginBottom: '40px',
             }}>
-                My education has been a journey of self-discovery. My educational details are as follows.
+                My education has been a journey of self-discovery.  My educational details are as follows.
             
             </Desc>
             <VerticalTimeline>
@@ -70,7 +70,7 @@ const Education = () => {
                     <EducationCard key={index} education={item}/>
                 ))}
             </VerticalTimeline>
-            <EarthCanvas/>
+            {/* <EarthCanvas/> */}
         </Wrapper>
     </Container>
   )

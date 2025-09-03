@@ -131,7 +131,7 @@ const Navbar = () => {
   return (
     <Nav>
          <NavbarContainer>
-      <NavLogo to='/'>
+      <NavLogo to='/' onClick={()=>window.scrollTo({top:0, behavior: 'smooth'})}>
       Dinesh.Dev
       </NavLogo>
 
