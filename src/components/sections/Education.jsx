@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import styled from 'styled-components'
 import { education } from '../../data/constants';
 import EducationCard from '../cards/EducationCard';
-import EarthCanvas from '../canvas/Earth';
+// import EarthCanvas from '../canvas/Earth';
 
 
 const Container = styled.div`
