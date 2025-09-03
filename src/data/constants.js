@@ -277,7 +277,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "./New_Images/VisnLabs.jpeg", 
+    img: "../../images/New_Images/VisnLabs.jpeg", 
     role: "Frontend Developer",
     company: "InnovateFirst Solutions LLP, Hyderabad",
     date: "Nov 2024 - Present",
