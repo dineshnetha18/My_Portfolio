@@ -258,7 +258,7 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "hhttps://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
       },
       // {
       //   name: "Adobe XD",
