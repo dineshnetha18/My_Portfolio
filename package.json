@@ -25,6 +25,7 @@
     "react-router-dom": "^6.28.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.3",
+    "react-toastify": "^11.0.5",
     "react-vertical-timeline-component": "^3.6.0",
     "styled-components": "^6.1.19",
     "three": "^0.170.0",

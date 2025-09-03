@@ -2,6 +2,8 @@ import React, { useRef } from 'react'
 import 'react-vertical-timeline-component/style.min.css';
 import styled from 'styled-components'
 import emailjs from '@emailjs/browser'; 
+import {toast, ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Container = styled.div`
 display: flex;
@@ -49,7 +51,7 @@ font-size: 16px;
 }
 `;
 
-const ContactForm = styled.div`
+const ContactForm = styled.form`
 width: 95%;
 max-width: 600px;
 display: flex;
@@ -90,6 +92,7 @@ background-color: hsla(271, 100%, 50%, 1);
 padding: 13px 16px;
 margin-top: 2px;
 border-radius: 12px;
+cursor: pointer;
 border: none;
 color: ${({theme}) => theme.text_primary};
 font-size: 18px;
@@ -114,21 +117,24 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs.sendForm(
-            'Your-serviceid',
-            'your_template_id',
+            'service_6hxh257',
+            'template_izlq7ui',
             form.current,
-            'tourapiid/tokenid'
+            '-Y3NNf57cbJ5fsfH9'
         ).then(
             (result) => {
-            alert('Message sent');
-            form.current.result();
+            toast.success('Message sent successfully ✅')
+            // alert('Message sent successfully ✅');
+            form.current.reset();
             },
             (error) => {
-                alert(error);
+            toast.error('Failed to send ❌: ' + error.text)
+                // alert('Failed to send ❌: ' + error.text);
             })
     }
   return (
     <Container id='Contact'>
+        <ToastContainer position='top-right' autoClose={3000}/>
         <Wrapper>
             <Title>Contact</Title>
             <Desc style={{
@@ -136,7 +142,7 @@ const Contact = () => {
             }}>
               Thank you for visiting my portfolio! If you’d like to collaborate, discuss opportunities, feel free to reach out.         
             </Desc>
-            <ContactForm onSubmit={handleSubmit}>
+            <ContactForm ref={form} onSubmit={handleSubmit}>
                 <ContactTitle>Get in Touch 🚀</ContactTitle>
                 <ContactInput placeholder='Your Name' name='from_name' />
                 <ContactInput placeholder='Your Email' name='from_email' />
