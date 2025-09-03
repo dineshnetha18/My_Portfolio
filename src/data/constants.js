@@ -39,7 +39,7 @@ export const skills = [
       {
         name: "Angular Js",
         image:
-          "https://camo.githubusercontent.com/8886130b3d8aba95dbdd7c4f9a41029606424cc06d1873c1ced87dd55a222fef/68747470733a2f2f616e67756c61722e696f2f6173736574732f696d616765732f6c6f676f732f616e67756c61722f616e67756c61722e737667",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg",
       },
       {
         name: "HTML",
@@ -258,7 +258,7 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
+          "hhttps://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
       },
       // {
       //   name: "Adobe XD",
@@ -277,7 +277,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "../../images/New_Images/VisnLabs.jpeg", 
+    img: "./New_Images/VisnLabs.jpeg", 
     role: "Frontend Developer",
     company: "InnovateFirst Solutions LLP, Hyderabad",
     date: "Nov 2024 - Present",
