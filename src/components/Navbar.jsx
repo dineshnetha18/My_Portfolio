@@ -28,10 +28,16 @@ font-size: 1rem;
 const NavLogo = styled(LinkR)`
 width: 80%;
 padding: 0 6px;
+display: flex;
+align-items: center;
+gap: 9px;
 font-weight: 500;
 font-size: 18px;
 text-decoration: none;
 color: inherit;
+// span {
+//     color: ${({ theme }) => theme.primary}; /* highlight .Dev */
+//   }
 `;
 
 const NavItems = styled.ul`
@@ -125,6 +131,11 @@ opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
 z-index: ${({isOpen}) => (isOpen ? '1000' : '-1000')};
 `;
 
+const NavImage = styled.img`
+width: 28px;
+height: 28px;
+`;
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const theme = useTheme();
@@ -132,7 +143,9 @@ const Navbar = () => {
     <Nav>
          <NavbarContainer>
       <NavLogo to='/' onClick={()=>window.scrollTo({top:0, behavior: 'smooth'})}>
-      Dinesh.Dev
+      <NavImage src='./New_Images/logo_white_1_transparent.png'></NavImage>
+
+      {`<Dinesh.Dev/>`}
       </NavLogo>
 
       <MobileIcon onClick={() => setIsOpen(!isOpen)}>

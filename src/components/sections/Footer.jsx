@@ -82,7 +82,7 @@ const Footer = () => {
   return (
     <FooterContainer>
         <FooterWrapper>
-            <Logo>Dinesh.Dev</Logo>
+            <Logo>{`<Dinesh.Dev/>`}</Logo>
             <Nav>
                 <NavLink href='#About'>About</NavLink>
         <NavLink href='#Skills'>Skills</NavLink>

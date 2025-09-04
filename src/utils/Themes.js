@@ -1,22 +1,22 @@
 export const darkTheme = {
-  bg: "#090917",
-  bgLight: "#1C1E27",
-  primary: "#854CE6",
-  text_primary: "#F2F3F4",
-  text_secondary: "#b1b2b3",
-  card: "#171721",
-  card_light: "#191924",
-  button: "#854CE6",
+  bg: "#0D1117",
+  bgLight: "#161B22",
+  primary: "#1F6FEB",       // bright blue
+  text_primary: "#E6EDF3",
+  text_secondary: "#8B949E",
+  card: "#161B22",
+  card_light: "#1C2128",
+  button: "#1F6FEB",
   white: "#FFFFFF",
   black: "#000000",
 };
 
 export const lightTheme = {
   bg: "#FFFFFF",
-  bgLight: "#f0f0f0",
-  primary: "#be1adb",
-  text_primary: "#111111",
-  text_secondary: "#48494a",
+  bgLight: "#F6F8FA",
+  primary: "#0366D6",       // strong blue
+  text_primary: "#24292F",
+  text_secondary: "#57606A",
   card: "#FFFFFF",
-  button: "#5c5b5b",
+  button: "#0366D6",
 };

@@ -123,50 +123,51 @@ line-height: 32px;
 `;
 
 const ResumeButton = styled.a`
--webkit-appearance: button;
--moz-appearance: button;
-appearance: button;
-text-decoration: none;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
 
-width: 95%;
-max-width: 300px;
-text-align: center;
-padding: 12px 0px;
-color:${({theme}) => theme.text_primary};
+  width: 85%;
+  max-width: 300px;
+  text-align: center;
+  padding: 10px 0px;
+  color: ${({ theme }) => theme.white};
 
-background: hsla(271, 100%, 50%, 1);
-background: linear-gradient(
-225deg,
-hsla(271, 100%, 50%, 1) 0%,
-hsla(294, 100%, 50%, 1) 100%
-);
-background: -moz-linear-gradient(
-225deg,
-hsla(271, 100%, 50%, 1) 0%,
-hsla(294, 100%, 50%, 1) 100%
-);
-background: -webkit-linear-gradient(
-225deg,
-hsla(271, 100%, 50%, 1) 0%,
-hsla(294, 100%, 50%, 1) 100%
-);
-box-shadow: 20px 20px 60px #1f2634, -20px -20px 60pc #1f2634;
-border-radius: 50px;
-font-weight: 600;
-font-size: 20px;
+  /* Unique Gradient - Vibrant Blue → Electric Purple */
+  background: linear-gradient(
+    135deg,
+    #00f5a0 0%,   /* neon teal */
+    #0d47ff 50%,  /* electric blue */
+    #9d00ff 100%  /* vivid purple */
+  );
 
-&:hover {
-transform: scale(1.05);
-transition: all 0.4s ease-in-out;
-box-shadow: 20px 20px 60px 31F2634,
-filter: brightness(1);
-}
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
 
-@media (max-width: 640px) {
-padding: 12px 0;
-font-size: 18px;
-}
+  /* Soft glow */
+  box-shadow: 0 4px 10px rgba(0, 245, 160, 0.3), 
+              0 2px 6px rgba(13, 71, 255, 0.3);
+
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    filter: brightness(1.02);
+    box-shadow: 0 8px 24px rgba(157, 0, 255, 0.4),
+                0 4px 12px rgba(0, 245, 160, 0.3);
+  }
+
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 18px;
+  }
 `;
+
 
 const Img = styled.img`
 border-radius: 50%;
